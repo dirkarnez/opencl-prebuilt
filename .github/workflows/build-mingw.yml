@@ -54,7 +54,7 @@ jobs:
             set CD_LINUX=%CD:\=/%
             gcc --version &&^
             cd OpenCL-SDK &&^
-            cmake.exe -G "MinGW Makefiles" -A x64 ^
+            cmake.exe -G "MinGW Makefiles" ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DBUILD_SHARED_LIBS=OFF ^
             -DBUILD_DOCS=OFF ^
