@@ -23,6 +23,7 @@ jobs:
             ref: ${{ env.tagName }}
             
         - name: Initialize git submodules
+          shell: cmd
           run: |
             cd OpenCL-SDK &&^
             git submodule init &&^
